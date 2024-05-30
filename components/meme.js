@@ -1,6 +1,18 @@
 import React from "react"
+import memesData from "../memesData.js"
+"
 
 export default function Meme() {
+
+    let url
+
+    function getMemeImage() {
+    const memesArray = memesData.data.memes
+    const randomNumber = Math.floor(Math.random() * memesArray.length)
+    url = memesArray[randomNumber].url
+    console.log(url)
+    }
+
     return (
         <main>
             <form className="form">
@@ -10,7 +22,7 @@ export default function Meme() {
                     </label>
                 </div>
                 <div>
-                    <label>
+                    <label htmlFor="bottom-text">
                         <input id="bottom-text" type="text" placeholder="en vat my geld" className="form--input"></input>
                     </label>
                 </div>
