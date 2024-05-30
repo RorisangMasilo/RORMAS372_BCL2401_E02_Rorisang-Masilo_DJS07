@@ -29,3 +29,13 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
 }
+
+.form {
+  display: grid;
+  grid-template: 40px 40px;
+  gap: 17px;
+}
+
+.form--button {
+  grid-column: 1;
+}

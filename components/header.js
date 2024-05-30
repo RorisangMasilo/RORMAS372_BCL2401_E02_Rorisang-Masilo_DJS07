@@ -5,6 +5,7 @@ export default function Header() {
     <header className="header">
       <img src="./assets/best-memes.jpg" />
       <h2 className="header--title">Meme Generator</h2>
+      <h4 className="header--project">React project</h4>
     </header>
   );
 }
