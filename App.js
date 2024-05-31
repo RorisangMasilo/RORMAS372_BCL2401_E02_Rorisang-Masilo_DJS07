@@ -1,6 +1,6 @@
 import React from "react";
-import header from "./components/header";
-import meme from "./components/meme";
+import header from "./components/Header";
+import meme from "./components/Meme";
 
 export default function App() {
   return (
