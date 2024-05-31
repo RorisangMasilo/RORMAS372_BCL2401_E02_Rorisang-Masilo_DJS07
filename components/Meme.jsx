@@ -21,6 +21,14 @@ export default function Meme() {
     // console.log(url)
     }
 
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
+    }
+
     return (
         <main>
             <form className="form">
