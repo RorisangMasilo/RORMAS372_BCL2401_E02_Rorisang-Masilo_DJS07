@@ -26,7 +26,6 @@ export default function Meme() {
         ...prevMeme,
         randomImage: url
     }))
-    // console.log(url)
     }
 
     function handleChange(event) {
@@ -42,15 +41,15 @@ export default function Meme() {
             <form className="form">
                 <div>
                     <label htmlFor="top-text">
-                        <input id="top-text" type="text" placeholder="Hoe opp" className="form--input"></input>
+                        <input id="top-text" type="text" placeholder="Hoe opp" className="form--input" name="topText" value={meme.topText} onChange={handleChange}></input>
                     </label>
                 </div>
                 <div>
                     <label htmlFor="bottom-text">
-                        <input id="bottom-text" type="text" placeholder="en vat my geld" className="form--input"></input>
+                        <input id="bottom-text" type="text" placeholder="en vat my geld" className="form--input" name="bottomText" value={meme.bottomText} onChange={handleChange}></input>
                     </label>
                 </div>
-                <button className="form--button">Get a new meme image</button>
+                <button className="form--button" onClick={getMemeImage}>Get a new meme image</button>
             </form>
         </main>
     ),
