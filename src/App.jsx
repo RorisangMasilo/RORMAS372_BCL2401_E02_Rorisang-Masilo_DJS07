@@ -1,5 +1,13 @@
-function App() {
-  return <></>;
-}
+/* eslint-disable no-unused-vars */
+import React from "react";
+import Header from "components/Header.jsx";
+import Meme from "components/Meme.jsx";
 
-export default App;
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <Meme />
+    </div>
+  );
+}
